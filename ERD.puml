@@ -1,0 +1,24 @@
+@startuml
+
+entity Book{
+    name
+    page_amount
+    publishing_year
+}
+
+entity Author{
+    name
+    born
+    dead
+}
+
+entity Genre{
+    name
+}
+
+'relations'
+    Author ||--{Book
+    Book }-{Genre
+'relations end'
+
+@enduml
